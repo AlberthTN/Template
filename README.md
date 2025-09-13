@@ -1,6 +1,6 @@
-# Rebeca - Agente Multi-herramientas con Gemini y Slack
+# Base - Agente Multi-herramientas con Gemini y Slack
 
-Rebeca es un agente de IA multi-herramientas que utiliza el ADK (Agent Development Kit) de Google para procesar y responder mensajes a través de Slack. Integra el modelo Gemini Pro para generar respuestas inteligentes y cuenta con características interactivas como reacciones emoji.
+Base es un agente de IA multi-herramientas que utiliza el ADK (Agent Development Kit) de Google para procesar y responder mensajes a través de Slack. Integra el modelo Gemini Pro para generar respuestas inteligentes y cuenta con características interactivas como reacciones emoji.
 
 ## Características
 
@@ -25,8 +25,8 @@ Rebeca es un agente de IA multi-herramientas que utiliza el ADK (Agent Developme
 ### Usando Docker (Recomendado)
 
 ```bash
-docker pull alberth121484/rebeca-py:01.00.025
-docker run -d --env-file .env alberth121484/rebeca-py:01.00.025
+docker pull alberth121484/base:01.00.001
+docker run -d --env-file .env alberth121484/base:01.00.001
 ```
 
 ### Instalación Manual
@@ -34,7 +34,7 @@ docker run -d --env-file .env alberth121484/rebeca-py:01.00.025
 1. Clonar el repositorio:
 ```bash
 git clone [URL_DEL_REPOSITORIO]
-cd rebeca
+cd base
 ```
 
 2. Instalar las dependencias:
@@ -55,7 +55,7 @@ GEMINI_API_KEY=your_gemini_api_key
 ### Con Docker
 
 ```bash
-docker run -d --env-file .env alberth121484/rebeca-py:01.00.025
+docker run -d --env-file .env alberth121484/base:01.00.001
 ```
 
 ### Ejecución Local
@@ -115,7 +115,7 @@ python -m pytest tests/
 
 Construir la imagen localmente:
 ```bash
-docker build -t rebeca-py .
+docker build -t base-py .
 ```
 
 ## Contribuir
